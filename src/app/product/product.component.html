@@ -1,0 +1,24 @@
+
+<!-- ngfor structural directive -->
+
+<div *ngFor="let p of products; let i = index" >
+    <p>{{i}}</p>
+    <!-- ngstyle is used for to change the color and styles of dom -->
+    <div class="product-container" [ngStyle]="{backgroundColor:p.available === 'Available' ? '#D5F5E3' : '#FADBD8'}">
+
+        <div>
+            <div class="name-container"><h6>{{p.name}}</h6></div>
+        
+            <div class="detailContainer">
+                <div class="details" [ngStyle]="{color: p.available === 'Available' ? 'Green': 'Red'}" >{{ p.available }}</div>
+                <div class="details"><b>Price:</b>${{ p.price }}</div>
+                <div class="details"><b>Color:</b>{{ p.color }}</div>
+            </div>
+        </div>
+        <div class="options">
+            <button class="btn btn-success">Show Deatils</button>
+            <button class="btn btn-warning" *ngIf="p.available === 'Available'">Buy Now</button>
+        </div>
+
+    </div>
+</div>

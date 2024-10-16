@@ -1,0 +1,8 @@
+<div >
+    <!-- eventBinding -->
+    <!-- <input type="text" (input)="InputSerachedValue($event)"> -->
+      <!-- two way databinding -->
+
+      <input type="text" [(ngModel)]="searchedValue">  
+    <span *ngIf="searchedValue != ''">you search for this {{searchedValue}}</span>
+</div>
