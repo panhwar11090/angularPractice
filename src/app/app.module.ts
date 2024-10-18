@@ -27,7 +27,7 @@ import { ProductComponent } from './product/product.component';
     AdminComponent,
     UserListComponent,
     UserDetailComponent,
-    SearchComponent,
+    // SearchComponent,
     ProductComponent
 
   ],

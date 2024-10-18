@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-home',
   templateUrl: './home.component.html',
   standalone: true,  // Make it standalone
-  imports: [CommonModule, HeroComponent, SidebarComponent], 
+  imports: [CommonModule, HeroComponent, SidebarComponent]
 })
 export class HomeComponent {
 
